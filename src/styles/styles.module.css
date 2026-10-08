@@ -1,0 +1,189 @@
+:global(.spicetify-topbar-button),
+.dropdownContainer {
+	-webkit-app-region: no-drag !important;
+}
+
+:global(#global-nav-bar) {
+	z-index: 99;
+}
+
+.dropdownContainer {
+	position: relative;
+	display: inline-block;
+	-webkit-app-region: no-drag !important;
+}
+
+.dropdownTrigger {
+	background: rgba(0, 0, 0, 0.5);
+	border: none;
+	border-radius: 50%;
+	color: rgb(179, 179, 179);
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.dropdownTrigger:hover {
+	background: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
+	transform: scale(1.05);
+}
+
+.dropdownTrigger:hover svg {
+	fill: #ffffff;
+}
+
+.dropdownMenu {
+	position: absolute;
+	top: calc(100% + 6px);
+	left: 0;
+	background-color: #282828;
+	border-radius: 8px;
+	padding: 12px;
+	min-width: 220px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+	z-index: 99999;
+	flex-direction: column;
+	gap: 15px;
+	-webkit-app-region: no-drag !important;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-4px);
+	visibility: hidden;
+	transition:
+		opacity 120ms ease,
+		transform 120ms ease,
+		visibility 120ms ease;
+}
+
+.dropdownMenuVisible {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateY(0);
+	visibility: visible;
+}
+
+.tooltip {
+	position: fixed;
+	z-index: 100000;
+	max-width: 240px;
+	padding: 8px 12px;
+	border-radius: 4px;
+	background: #282828;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: center;
+	white-space: nowrap;
+	pointer-events: none;
+	opacity: 0;
+	transform: translate(-50%, -4px);
+	transition:
+		opacity 80ms ease,
+		transform 80ms ease;
+}
+
+.tooltipVisible {
+	opacity: 1;
+	transform: translate(-50%, 0);
+}
+
+.categorySection {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.categoryTitle {
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #a7a7a7;
+	margin-bottom: 2px;
+}
+
+.buttonRow {
+	display: flex;
+	align-items: center;
+}
+
+.buttonRow > div {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+	gap: 8px;
+	align-items: center;
+}
+
+:global(.extensions-wrapper button) {
+	display: flex;
+	background-color: #242424;
+	align-items: center;
+	justify-content: center;
+	color: #b3b3b3;
+	width: 48px;
+	height: 48px;
+
+	transition:
+		background-color 0.2s ease-in-out,
+		color 0.2s ease-in-out;
+}
+
+:global(.extensions-wrapper button:hover) {
+	background-color: #252525;
+	color: #ffffff;
+}
+
+:global(.extensions-wrapper button svg) {
+	height: 24px;
+	width: 24px;
+}
+
+/* Slot for moved buttons inside the menu */
+.slot {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+:global(.custom-navlinks-scrollable_container) {
+	display: none !important;
+}
+
+:global(.main-globalNav-historyButtonsWrapper) {
+	display: flex !important;
+	align-items: center !important;
+	gap: 8px !important;
+}
+
+:global(.main-globalNav-historyButtonsSpacer) {
+	order: 1 !important;
+}
+
+:global(.main-globalNav-historyButtons) {
+	order: 2 !important;
+}
+
+.dropdownHost {
+	position: relative;
+	z-index: 99999 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	order: 4 !important;
+	-webkit-app-region: no-drag !important;
+}
+
+:global([aria-label="Home"]),
+:global(a[aria-label="Home"]),
+:global(button[aria-label="Home"]) {
+	-webkit-app-region: no-drag !important;
+	background-color: transparent !important;
+	margin: 0px !important;
+	order: 3 !important;
+}

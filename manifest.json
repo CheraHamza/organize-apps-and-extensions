@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Organize Apps and Extensions",
+		"description": "A Spicetify extension that combines installed extensions and custom apps into a single dropdown in Spotify's navigation bar.",
+		"preview": "marketing/Screenshot.jpg",
+		"main": "dist/organize-apps-and-extensions.js",
+		"readme": "README.md",
+		"authors": [
+			{
+				"name": "CheraHamza",
+				"url": "https://github.com/CheraHamza"
+			}
+		],
+		"tags": ["interface", "organize", "Topbar", "Clean"]
+	}
+]
