@@ -20,7 +20,7 @@ A [Spicetify](https://spicetify.app/) extension that combines installed extensio
 
 ## Installation
 
-Install the extension through the Spicetify Marketplace, or install it manually from
+Install the extension through the Spicetify Marketplace (search for "Organize Apps and Extensions"), or install it manually from
 the repository's **Releases** page:
 
 1. Download `organize-apps-and-extensions.js` from the release assets.
