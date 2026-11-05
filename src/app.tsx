@@ -85,7 +85,7 @@ function SpicetifyAppsDropDown({
         }
         openedByFocus = false;
         setMenuOpen(!menu?.classList.contains(styles.dropdownMenuVisible));
-      } else if (target?.closest("a, [role='button']")) {
+      } else if (target?.closest("button, a, [role='button']")) {
         setMenuOpen(false);
       }
     };
