@@ -5,17 +5,14 @@ A [Spicetify](https://spicetify.app/) extension that combines installed extensio
 ## Preview
 
 <p align="center">
-	<img src="./marketing/Screenshot.jpg" alt="preview" />
+	<img src="./marketing/Screenshot.png" alt="preview" />
 </p>
 
 ## Features
 
-- Groups all installed Spicetify extensions in one menu.
-- Includes Spicetify custom apps.
-- Shows tooltips using each button's `aria-label`.
+- Groups all installed Spicetify extensions and custom apps in one menu.
 - Supports mouse hover and keyboard focus.
-- Closes the menu after selecting an item.
-- Adds a subtle open and close transition.
+- Shows tooltips on hover or focus.
 
 
 ## Installation
